@@ -297,8 +297,10 @@ const MyDocument = () => (
             <Paragraph>
               I have been working for Porsche as an external consultant, in a
               cross- brand project with Audi, VW and Porsche. My team's role is
-              to provide a developer tools and a development environment for
-              software developers of the three brands.
+              to provide a docker-based development environment with state of
+              the art tools for cross-compilation, unit testing and static
+              analysis, as well as deploying and configuring the backend
+              infrastructure (Atlassian stack, Jenkins, Kubernetes).
             </Paragraph>
           </JobDescription>
 
