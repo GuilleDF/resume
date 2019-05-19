@@ -283,9 +283,9 @@ const MyDocument = () => (
       </Header>
       <Body>
         <View>
-          <SectionTitle>Overview</SectionTitle>
+          {/* <SectionTitle>Overview</SectionTitle>
           <JobDescription>
-            {/* <Paragraph>
+            <Paragraph>
               I'm a computer science engineer and I'm passionate about what I
               do. I like to spend my free time tinkering with computers, and
               what I love most about my job(s) is when I get to use new
@@ -298,13 +298,13 @@ const MyDocument = () => (
               corporate) and this has taught me how to work with many different
               kinds of people. I really enjoy meeting people from different
               backgrounds and cultures and learning something new from them.
-            </Paragraph> */}
+            </Paragraph>
             <Paragraph>
               I have experience in systems administration (linux), software
               development in many languages (including Python. Javascript and
               C++), Scrum/agile methodologies and artificial intelligence.
             </Paragraph>
-          </JobDescription>
+          </JobDescription> */}
 
           <SectionTitle>Work Experience</SectionTitle>
           <JobDescription>
