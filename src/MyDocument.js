@@ -70,6 +70,7 @@ const Body = styled.View`
   font-family: Roboto;
   flex-direction: column;
   justify-content: space-between;
+  line-height: 1.35pt;
 `
 
 const SectionTitleText = styled.Text`
@@ -106,15 +107,17 @@ const SectionTitle = props => (
 
 const Company = styled.Text`
   font-size: 10pt;
+  margin-bottom: 1pt;
 `
 const WorkPeriod = styled.Text`
   font-weight: lighter;
   font-size: 8pt;
-  margin-bottom: 2pt;
+  margin-bottom: 4pt;
 `
 const Position = styled.Text`
   font-weight: bold;
   font-size: 10pt;
+  margin-bottom: 1pt;
 `
 
 const HeaderTitle = styled.Text`
@@ -123,13 +126,14 @@ const HeaderTitle = styled.Text`
 `
 
 const Paragraph = styled.Text`
-  margin-top: 7pt;
+  margin-bottom: 5pt;
+  margin-top: 5pt;
   font-size: 10pt;
   width: 320pt;
 `
 
 const JobDescription = styled.View`
-  padding-bottom: 20pt;
+  padding-bottom: 30pt;
 `
 
 const ProgressBarContainer = styled.View`
@@ -201,13 +205,14 @@ const ListItemText = styled.Text`
 
 const ListItem = props => (
   <ListItemWrapper>
-    <Bullet /><ListItemText>{props.children}</ListItemText>
+    <Bullet />
+    <ListItemText>{props.children}</ListItemText>
   </ListItemWrapper>
 )
 
 const MyDocument = () => (
   <Document>
-    <MainPage size="A4">
+    <MainPage size="A4" wrap={false}>
       <Header>
         <CirclePic src={require('./assets/GuillermoFermin.jpg')} />
         <PersonalInfo>
@@ -283,29 +288,6 @@ const MyDocument = () => (
       </Header>
       <Body>
         <View>
-          {/* <SectionTitle>Overview</SectionTitle>
-          <JobDescription>
-            <Paragraph>
-              I'm a computer science engineer and I'm passionate about what I
-              do. I like to spend my free time tinkering with computers, and
-              what I love most about my job(s) is when I get to use new
-              technologies or tools. I have experience with many programming
-              languages, but I'm not afraid to program in a language I've never
-              touched before.
-            </Paragraph>
-            <Paragraph>
-              I've worked in many different environments (research, startup,
-              corporate) and this has taught me how to work with many different
-              kinds of people. I really enjoy meeting people from different
-              backgrounds and cultures and learning something new from them.
-            </Paragraph>
-            <Paragraph>
-              I have experience in systems administration (linux), software
-              development in many languages (including Python. Javascript and
-              C++), Scrum/agile methodologies and artificial intelligence.
-            </Paragraph>
-          </JobDescription> */}
-
           <SectionTitle>Work Experience</SectionTitle>
           <JobDescription>
             <Position>Consultant</Position>
@@ -314,7 +296,7 @@ const MyDocument = () => (
             <WorkPeriod>📍 Stuttgart, Germany</WorkPeriod>
             <Paragraph>
               I have been working for Porsche as an external consultant, in a
-              cross-brand project with Audi, VW and Porsche. My team's role is
+              cross- brand project with Audi, VW and Porsche. My team's role is
               to provide a developer tools and a development environment for
               software developers of the three brands.
             </Paragraph>
@@ -371,7 +353,9 @@ const MyDocument = () => (
         </View>
         <Footer>
           <Text>Made with React. Source: </Text>
-          <Link href="https://github.com/GuilleDF/resume">https://github.com/GuilleDF/resume</Link>
+          <Link href="https://github.com/GuilleDF/resume">
+            https://github.com/GuilleDF/resume
+          </Link>
         </Footer>
       </Body>
     </MainPage>

@@ -18,6 +18,9 @@ Font.registerEmojiSource({
   url: 'https://twemoji.maxcdn.com/2/72x72/',
 })
 
+// Enable hyphenation only for existing hyphens
+Font.registerHyphenationCallback(word => [word])
+
 const App = () => (
   <PDFViewer width="100%" height="900">
     <MyDocument />
