@@ -11,7 +11,7 @@ git clone https://github.com/GuilleDF/resume.git
 ```sh
 yarn install
 ```
-OR
+or
 ```sh
 npm install
 ```
@@ -19,7 +19,7 @@ npm install
 ```sh
 yarn start
 ```
-OR
+or
 ```sh
 npm start
 ```
