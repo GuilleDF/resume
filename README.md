@@ -11,7 +11,15 @@ git clone https://github.com/GuilleDF/resume.git
 ```sh
 yarn install
 ```
+or
+```sh
+npm install
+```
 3. Run pdf viewer in browser
 ```sh
 yarn start
+```
+or
+```sh
+npm start
 ```
